@@ -57,6 +57,14 @@
 - Receipt scanning runs fully on-device via Google ML Kit — no images are sent to any server
 - Backup files contain financial data and should be stored safely
 
+### How receipt scanning works
+
+1. Open the add-transaction form and tap the scan icon.
+2. Choose a source: pick an existing screenshot from your gallery, or take a photo of a paper receipt with the camera.
+3. Google ML Kit reads the text on-device (no internet required, no image ever leaves your phone).
+4. Uangku parses the recognized text to guess the amount, date, time, and a short note — prioritizing keywords like "Total", "Tanggal", and "Waktu" when present.
+5. The form is pre-filled with the guess, but nothing is saved automatically — you always review and can edit any field before confirming.
+
 ## Download / Build From Source
 
 This project doesn't have a published release yet. To build your own APK:
